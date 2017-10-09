@@ -41,6 +41,9 @@ en:
     screencast: "screencast series"
     rails: "Ruby on Rails"
   home:
+    welcome: "Welcome to the Sample App"
+    sign_up: "Sign up now!"
+    img_alt: "Rails logo"
     title: "Home"
     app_name: "Sample App"
     content: "This is the home page for the %{url_rails_tutorial} sample application."
@@ -54,4 +57,15 @@ en:
     title: "Contact"
     content: "Contact the Ruby on Rails Tutorial about the sample app at the %{url_contact_page}"
     contact_page: "contact page"
-
+  header:
+    sample_app: "sample app"
+  login:
+    title: "Log in"
+  footer:
+    content: "The %{url_rails_tutorial} by %{url_author}"
+    rails_tutorial: "Ruby on Rails Tutorial"
+    author: "Michael Hartl"
+    new: "News"
+  users:
+    sign_up_title: "Sign up"
+    sign_up_description: "This will be a signup page for new users."
