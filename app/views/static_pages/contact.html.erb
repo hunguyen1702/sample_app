@@ -1,0 +1,7 @@
+<% provide :title, t("contact.title")  %>
+<h1><%= t "contact.title" %></h1>
+<p>
+  <%= t("contact.content", {
+    url_contact_page: link_to(t("contact_page"), "http://www.railstutorial.org/contact")
+  }).html_safe %>
+</p>
