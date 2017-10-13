@@ -1,0 +1,14 @@
+<div id="error_explanation">
+  <% if @user.errors.present? %>
+    <%= content_tag :div,
+      t("users.error_message", {
+        error_info: pluralize(@user.errors.count, t("users.error"))
+      }), class: "alert alert-danger"
+    %>
+  <% end %>
+  <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
