@@ -9,6 +9,8 @@ class UsersController < ApplicationController
       per_page: Settings.user_model.page_size
   end
 
+  def show; end
+
   def new
     @user = User.new
   end
@@ -25,8 +27,6 @@ class UsersController < ApplicationController
       render :new
     end
   end
-
-  def show; end
 
   def edit; end
 
@@ -59,7 +59,7 @@ class UsersController < ApplicationController
   def load_user
     @user = User.find_by id: params[:id]
 
-    return if @user
+    return if @user && @user.activated?
     flash[:danger] = t "users.not_exist"
     redirect_to root_path
   end
