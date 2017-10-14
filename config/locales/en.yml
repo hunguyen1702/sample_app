@@ -34,6 +34,7 @@ en:
   sample_app: "Ruby on Rails Tutorial Sample App"
   error: "error"
   error_message: "The form contains %{error_info}"
+  not_found: "Not found"
   about:
     book: "book"
     content: "The %{url_rails_tutorial} is a %{url_book} and %{url_screencast}
@@ -107,6 +108,12 @@ en:
     update_success: "Profile updated"
     micropost_count: "Microposts %{count}"
     micropost: "micropost"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    following: "Following"
+    follower: "Followers"
+    follow_post: "Microposts:"
+    invalid_info: "Invalid %{object_name}"
   sessions:
     login: "Log in"
     login_failed: "Invalid email/password combination"
