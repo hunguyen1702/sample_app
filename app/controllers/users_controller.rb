@@ -9,8 +9,6 @@ class UsersController < ApplicationController
       per_page: Settings.user_model.page_size
   end
 
-  def show; end
-
   def new
     @user = User.new
   end
@@ -26,6 +24,11 @@ class UsersController < ApplicationController
       flash.now[:danger] = t "users.signup_error"
       render :new
     end
+  end
+
+  def show
+    @microposts = @user.microposts.paginate page: params[:page],
+      per_page: Settings.micropost_model.page_size
   end
 
   def edit; end

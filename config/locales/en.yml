@@ -32,6 +32,8 @@
 en:
   hello: "Hello world"
   sample_app: "Ruby on Rails Tutorial Sample App"
+  error: "error"
+  error_message: "The form contains %{error_info}"
   about:
     book: "book"
     content: "The %{url_rails_tutorial} is a %{url_book} and %{url_screencast}
@@ -48,6 +50,7 @@ en:
     sign_up: "Sign up now!"
     title: "Home"
     welcome: "Welcome to the Sample App"
+    feed: "Micropost Feed"
   help:
     content: "Get help on the Ruby on Rails Tutorial at the %{url_rails_help_page} To get help on this sample app, see the %{url_rails_tutorial}"
     rails_help_page: "Rails Tutorial help section"
@@ -78,6 +81,12 @@ en:
     not_activated: "This account is not activated yet."
     not_exist: "User is not exist"
     profile: "Profile"
+    view_profile: "view my profile"
+    confirm_delete: "You sure?"
+    delete: "Delete"
+    delete_success: "User deleted"
+    loggin_require: "Please log in."
+    save_change: "Save changes"
     settings: "Settings"
     sign_up_description: "This will be a signup page for new users."
     sign_up_title: "Sign up"
@@ -94,15 +103,19 @@ en:
     delete_warn: "You don't have right priviledge"
     update_failed: "Cannot update account"
     update_success: "Profile updated"
+    update_failed: "Cannot update account"
+    update_success: "Profile updated"
+    micropost_count: "Microposts %{count}"
+    micropost: "micropost"
   sessions:
     login: "Log in"
     login_failed: "Invalid email/password combination"
     logout: "Log out"
     new_user: "New user?"
-    remember_me: "Remember me on this computer"
-    signup: "Sign up now!"
     not_activated: "Account not activated.
       Check your email for the activation link."
+    remember_me: "Remember me on this computer"
+    signup: "Sign up now!"
     forgot_password: "forgot password?"
   password_reset:
     forgot_password: "Forgot password"
@@ -115,6 +128,18 @@ en:
     success: "Password has been reset."
     empty: "can't be empty"
     failed: "Invalid password"
+  microposts:
+    posted_time: "Posted %{time} ago"
+    create_success: "Micropost created!"
+    create_failed: "Cannot post!"
+    placeholder: "Compose new micropost..."
+    post: "Post"
+    delete: "delete"
+    confirm: "Are you sure?"
+    delete_success: "Micropost deleted"
+    delete_failed: "Cannot delete micropost"
+    img_warn: "should be less than 5MB"
+    img_warn_js: "Maximum file size is 5MB. Please choose a smaller file."
   mailer:
     activation:
       activate: "Activate"
