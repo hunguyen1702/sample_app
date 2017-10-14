@@ -1,0 +1,9 @@
+<%= content_tag :h1, t("home.app_name") %>
+
+<%= content_tag :p,
+  t("mailer.activation.greeting", {user_name: @user.name}) %>
+
+<%= content_tag :p, t("mailer.activation.content") %>
+
+<%= link_to t("mailer.activation.activate"),
+  edit_account_activation_url(@user.activation_token, email: @user.email) %>

@@ -99,6 +99,7 @@ en:
     delete_success: "User deleted"
     delete_failed: "Delete user failed"
     delete_warn: "You don't have right priviledge"
+    not_activated: "This account is not activated yet."
   sessions:
     login: "Log in"
     login_failed: "Invalid email/password combination"
@@ -106,3 +107,15 @@ en:
     new_user: "New user?"
     remember_me: "Remember me on this computer"
     signup: "Sign up now!"
+    not_activated: "Account not activated.
+      Check your email for the activation link."
+  mailer:
+    activation:
+      subject: "Account activation"
+      content: "Welcome to the Sample App!
+        Click on the link below to activate your account:"
+      greeting: "Hi %{user_name},"
+      activate: "Activate"
+      inform: "Please check your email to activate your account."
+      success: "Account activated!"
+      failed: "Invalid activation link"

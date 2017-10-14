@@ -5,3 +5,5 @@ user_model:
   img_size: 80
   img_index_size: 50
   page_size: 30
+mailer:
+  from: "noreply@example.com"
