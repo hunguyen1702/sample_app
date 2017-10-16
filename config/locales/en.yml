@@ -86,3 +86,4 @@ en:
     signup: "Sign up now!"
     new_user: "New user?"
     login_failed: "Invalid email/password combination"
+    remember_me: "Remember me on this computer"
