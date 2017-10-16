@@ -3,3 +3,5 @@ user_model:
   max_length_email: 255
   min_length_password: 6
   img_size: 80
+  img_index_size: 50
+  page_size: 30

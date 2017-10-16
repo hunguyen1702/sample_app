@@ -12,8 +12,9 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
   has_secure_password
-  validates :password, presence: true,
+  validates :password, presence: true, allow_blank: true,
     length: {minimum: Settings.user_model.min_length_password}
+  scope :user_info, ->{select :id, :name, :email}
 
   class << self
     def digest string
@@ -39,5 +40,9 @@ class User < ApplicationRecord
 
   def forget
     update_attribute :remember_digest, nil
+  end
+
+  def is_user? user
+    self == user
   end
 end
