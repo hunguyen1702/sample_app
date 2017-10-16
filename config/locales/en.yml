@@ -59,6 +59,7 @@ en:
     contact_page: "contact page"
   header:
     sample_app: "sample app"
+    account: "Account %{caret}"
   login:
     title: "Log in"
   footer:
@@ -67,6 +68,9 @@ en:
     author: "Michael Hartl"
     new: "News"
   users:
+    title: "Users"
+    profile: "Profile"
+    settings: "Settings"
     sign_up_title: "Sign up"
     sign_up_description: "This will be a signup page for new users."
     success_welcome: "Welcome to the Sample App!"
@@ -76,3 +80,9 @@ en:
     error: "error"
     not_exist: "User is not exist"
     signup_error: "Cannot create account"
+  sessions:
+    login: "Log in"
+    logout: "Log out"
+    signup: "Sign up now!"
+    new_user: "New user?"
+    login_failed: "Invalid email/password combination"
