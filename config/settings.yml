@@ -7,3 +7,5 @@ user_model:
   page_size: 30
 mailer:
   from: "noreply@example.com"
+password_reset:
+  expire_time: 2
