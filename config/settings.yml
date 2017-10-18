@@ -9,3 +9,10 @@ mailer:
   from: "noreply@example.com"
 password_reset:
   expire_time: 2
+micropost_model:
+  max_length_content: 140
+  img_accept_type: "image/jpeg,image/gif,image/png"
+  img_limit_height: 400
+  img_limit_width: 400
+  page_size: 30
+  img_file_size: 5
