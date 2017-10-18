@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update]
-  before_action :load_user, only: [:show, :edit, :update, :destroy]
+  before_action :load_user,
+    only: [:show, :edit, :update, :destroy, :following, :followers]
   before_action :correct_user, only: [:edit, :update]
   before_action :verify_admin!, only: :destroy
 
   def index
-    @users = User.user_info.paginate page: params[:page],
+    @users = User.user_info.activated_user.paginate page: params[:page],
       per_page: Settings.user_model.page_size
   end
 
@@ -50,6 +51,20 @@ class UsersController < ApplicationController
       flash[:danger] = t "users.delete_failed"
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t "users.following"
+    @users = @user.following.paginate page: params[:page],
+      per_page: Settings.user_model.page_size
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "users.follower"
+    @users = @user.followers.paginate page: params[:page],
+      per_page: Settings.user_model.page_size
+    render "show_follow"
   end
 
   private
